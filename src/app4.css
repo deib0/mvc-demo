@@ -1,0 +1,30 @@
+.app4 {
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid #000;
+}
+
+.app4>.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+.color {
+    animation: change 3s alternate infinite;
+}
+
+@keyframes change {
+    0% {
+        background: red;
+    }
+
+    50% {
+        background: green;
+    }
+
+    100% {
+        background: blue;
+    }
+}
