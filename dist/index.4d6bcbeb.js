@@ -7348,6 +7348,8 @@ $switch.on('click', 'li', (e)=>{
     $content.children().eq(index).removeClass('none') //  eq(）得到顺序
     .siblings().addClass('none');
 });
+$switch.children().eq(0).trigger('click') //  默认触发第一个
+;
 
 },{"./app2.css":"8RnuD","jquery":"hgMhh","@parcel/transformer-js/src/esmodule-helpers.js":"ad717"}],"8RnuD":[function() {},{}],"264pe":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -7356,7 +7358,8 @@ var _jquery = require("jquery");
 var _jqueryDefault = parcelHelpers.interopDefault(_jquery);
 let $square = _jqueryDefault.default('.square');
 $square.on('click', ()=>{
-    $square.toggleClass('move');
+    $square.toggleClass('move') // 会自动检测类名，如果有就加，没有就去掉
+    ;
 });
 
 },{"./app3.css":"iOgrn","jquery":"hgMhh","@parcel/transformer-js/src/esmodule-helpers.js":"ad717"}],"iOgrn":[function() {},{}],"6ZENx":[function(require,module,exports) {

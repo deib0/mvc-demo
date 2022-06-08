@@ -10,3 +10,4 @@ $switch.on('click', 'li', (e) => {
         .eq(index).removeClass('none')//  eq(）得到顺序
         .siblings().addClass('none')
 })
+$switch.children().eq(0).trigger('click')//  默认触发第一个
